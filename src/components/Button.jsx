@@ -1,7 +1,7 @@
 export default function Button(props) {
 	return (
-		<a className={props.class} href={props.href}>
-			<span className="text">{props.text}</span>
-		</a>
+		<button className={`button ${props.class}`} onClick={props.onclick}>
+			{props.text}
+		</button>
 	);
 }

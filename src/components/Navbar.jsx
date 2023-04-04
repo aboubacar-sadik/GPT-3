@@ -31,9 +31,19 @@ export default function Navbar(props) {
 			</div>
 			<ul className={`navlinks ${showMenu ? 'show_menu' : ''}`}>
 				{props.links}
-				<Button class="cv_button cv_mobile slide_5" text="CV" onclick={downloadResume} />
+				<Button
+					class="cv_button cv_mobile slide_5"
+					text="CV"
+					linkTo="../public/Portfolio 2.0.pdf"
+					download="CV_Aboubacar_Sadik"
+				/>
 			</ul>
-			<Button class="cv_button cv_desktop" text="CV" onclick={downloadResume} />
+			<Button
+				class="cv_button cv_desktop"
+				text="CV"
+				linkTo="../public/Portfolio 2.0.pdf"
+				download="CV_Aboubacar_Sadik"
+			/>
 
 			<button className={`burger ${showMenu ? 'show' : ''}`} onClick={handleShowMenu}>
 				<span className="burger_line"></span>

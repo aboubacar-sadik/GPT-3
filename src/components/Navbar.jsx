@@ -31,12 +31,14 @@ export default function Navbar(props) {
 			</div>
 			<ul className={`navlinks ${showMenu ? 'show_menu' : ''}`}>
 				{props.links}
-				<Button
-					class="cv_button cv_mobile slide_5"
-					text="CV"
-					linkTo="../public/Portfolio 2.0.pdf"
-					download="CV_Aboubacar_Sadik"
-				/>
+				<li>
+					<Button
+						class="cv_button cv_mobile slide_5"
+						text="CV"
+						linkTo="../public/Portfolio 2.0.pdf"
+						download="CV_Aboubacar_Sadik"
+					/>
+				</li>
 			</ul>
 			<Button
 				class="cv_button cv_desktop"

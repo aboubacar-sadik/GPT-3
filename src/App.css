@@ -88,6 +88,34 @@ li {
 	background-color: var(--blue-dark);
 }
 
+.button.outlined_button {
+	background: transparent;
+	border: 1px solid var(--black);
+	color: var(--black);
+	position: relative;
+	z-index: 1;
+}
+.button.outlined_button:hover {
+	color: var(--white);
+}
+.button.outlined_button::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 0;
+	height: 100%;
+	background-color: var(--black);
+	/* transform: translateX(-100%); */
+	transition: all 0.3s;
+	z-index: -1;
+}
+
+.button.outlined_button:hover::before {
+	/* transform: translateX(0); */
+	width: 100%;
+}
+
 /* NAVABAR STYLING */
 header {
 	display: flex;
@@ -575,11 +603,8 @@ footer span > a {
 	color: var(--blue-dark);
 }
 
-/* These media queries can be used to adjust the layout, font sizes, and other visual elements of your website to ensure that it looks good on different screen sizes and devices. Note that these are just examples, and you may need to adjust the breakpoints and styles to suit your specific needs. */
+/* MEDIA QUERIES */
 
-* {
-	/* outline: 1px solid rgba(50, 205, 50, 0.1); */
-}
 @media (max-width: 576px) {
 	/* CSS styles for small devices */
 	body {
@@ -788,32 +813,4 @@ footer span > a {
 		height: auto;
 		padding-bottom: 40px;
 	}
-}
-
-.button.outlined_button {
-	background: transparent;
-	border: 1px solid var(--black);
-	color: var(--black);
-	position: relative;
-	z-index: 1;
-}
-.button.outlined_button:hover {
-	color: var(--white);
-}
-.button.outlined_button::before {
-	content: '';
-	position: absolute;
-	left: 0;
-	top: 0;
-	width: 0;
-	height: 100%;
-	background-color: var(--black);
-	/* transform: translateX(-100%); */
-	transition: all 0.3s;
-	z-index: -1;
-}
-
-.button.outlined_button:hover::before {
-	/* transform: translateX(0); */
-	width: 100%;
 }

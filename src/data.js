@@ -6,8 +6,8 @@ import coloredFigmaIcon from './assets/figma-colored.svg'
 import coloredIllustratorIcon from './assets/illustrator-colored.svg'
 import profileImage from './assets/profil.jpg'
 import portfolioWebsiteImg from './assets/img/portfolio.png'
-import phoneFormIcon from './assets/phone.svg'
-import emailFormIcon from './assets/email-form.svg'
+import phoneFormIcon from './assets/call.svg'
+import emailFormIcon from './assets/envelope.svg'
 
 export default {
     navlinks: [

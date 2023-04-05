@@ -25,6 +25,10 @@
 	--project-font-size: 2rem;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	font-family: 'Josefin Sans', 'Jost', 'Reem Kufi', sans-serif;
 	font-size: 18px;
@@ -602,8 +606,6 @@ footer p > span {
 footer span > a {
 	color: var(--blue-dark);
 }
-
-/* MEDIA QUERIES */
 
 @media (max-width: 576px) {
 	/* CSS styles for small devices */

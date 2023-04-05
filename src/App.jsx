@@ -123,7 +123,7 @@ export default function App() {
 						))}
 					/>
 				</div>
-				<div className="container contact_container">
+				<div className="container contact_container" id="contact">
 					<div className="contact_wrapper">
 						<div className="other_contact">
 							{portfolioData.contactItems.socials.map((item, i) => (

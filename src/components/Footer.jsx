@@ -3,7 +3,8 @@ export default function Footer() {
 	return (
 		<div className="container footer_container">
 			<p>
-				© {copyrightDate} Conçu et développé avec ❤ par <span>Aboubacar Sadik</span>
+				© {copyrightDate} Conçu et développé avec <span>❤</span> par
+				<span>Aboubacar Sadik</span>
 			</p>
 			<span>
 				Icons from <a href="https://www.iconfinder.com/icons">iconsfinder.com</a>

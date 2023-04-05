@@ -2,7 +2,7 @@ import Button from './Button';
 
 export default function ContactForm(props) {
 	return (
-		<form onSubmit={props.onsubmit} id="form contact">
+		<form onSubmit={props.onsubmit} id="form">
 			<input
 				type="text"
 				name="firstName"

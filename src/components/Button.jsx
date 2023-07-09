@@ -1,12 +1,7 @@
-export default function Button(props) {
+export default function Button({ children }) {
 	return (
-		<a
-			href={props.linkTo}
-			onClick={props.onclick}
-			target={props.target}
-			download={props.download}
-		>
-			<button className={`button ${props.class}`}>{props.text}</button>
-		</a>
+		<button className=" text-white text-lg border-none transition-all duration-500 ease-in-out hover:bg-rose-700 h-11 rounded bg-red w-40">
+			{children}
+		</button>
 	);
 }

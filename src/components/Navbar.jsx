@@ -1,13 +1,12 @@
-import { useState } from 'react';
 import logo from '../assets/images/GPT-3.png';
 import Registration from './Registration';
-import { FaXmark, FaBars } from 'react-icons/fa6';
+import { FaBars } from 'react-icons/fa6';
 import 'flowbite';
 
 export default function Navbar() {
 	return (
-		<nav className=" w-full">
-			<div className="flex flex-wrap items-center mx-auto p-4 lg:h-20">
+		<nav className="container px-2 w-full">
+			<div className="flex flex-wrap items-center mx-auto lg:h-20">
 				<a href="#" className="flex items-center mr-20">
 					<img src={logo} alt="Logo" />
 				</a>

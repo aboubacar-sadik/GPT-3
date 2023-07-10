@@ -14,7 +14,7 @@ function Subtitle({ title, description }) {
 
 export default function About() {
 	return (
-		<section className=" bg-light-blue relative overflow-hidden">
+		<section className=" max-w-8xl m-auto bg-light-blue relative overflow-hidden">
 			<div className="container py-16 flex flex-col gap-24  ">
 				<div className="flex items-start justify-between w-full">
 					<Subtitle

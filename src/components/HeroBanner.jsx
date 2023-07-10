@@ -48,8 +48,8 @@ export default function HeroBanner() {
 					</p>
 				</div>
 			</div>
-			<div className="hidden lg:w-1/2">
-				<img src={illustrationImage} alt="" />
+			<div className="hidden lg:w-1/2 lg:block">
+				<img src={illustrationImage} alt="image IA" />
 			</div>
 		</section>
 	);

@@ -6,10 +6,7 @@ export default {
     "./node_modules/flowbite/**/*.js"
   ],
   theme: {
-    container: {
-      center: true,
 
-    },
     extend: {
       colors: {
         'orange': '#FF8A71',
@@ -24,6 +21,19 @@ export default {
       },
       blur: {
         '4xl': '200px',
+      },
+      container: {
+        center: true,
+        padding: {
+          DEFAULT: '1rem',
+          sm: '2rem',
+          lg: '4rem',
+          xl: '5rem',
+          '2xl': '6rem',
+        },
+      },
+      maxWidth: {
+        '8xl': '1536px'
       }
     },
   },

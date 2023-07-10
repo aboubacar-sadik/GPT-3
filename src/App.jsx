@@ -14,12 +14,10 @@ export default function App() {
 		<>
 			<header>
 				<Navbar />
+				<HeroBanner />
 			</header>
 			<main>
-				<HeroBanner />
-				<div className=" pb-16 lg:pb-28">
-					<SponsorLogo />
-				</div>
+				<SponsorLogo />
 				<About />
 				<Feature />
 				<CaseStudy />

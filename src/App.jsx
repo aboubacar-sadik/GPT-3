@@ -4,6 +4,10 @@ import SponsorLogo from './components/SponsorLogo';
 import About from './components/About';
 import Feature from './components/Feature';
 import CaseStudy from './components/CaseStudy';
+import CallToAction from './components/CallToAction';
+import Blog from './components/Blog';
+import Footer from './components/Footer';
+import { posts } from '../data';
 
 export default function App() {
 	return (
@@ -19,12 +23,10 @@ export default function App() {
 				<About />
 				<Feature />
 				<CaseStudy />
-				{/* 
-			<CallToAction />
-			<Blog />
-			<Footer /> */}
+				<CallToAction />
+				<Blog posts={posts} />
 			</main>
-			<footer></footer>
+			<Footer />
 		</>
 	);
 }

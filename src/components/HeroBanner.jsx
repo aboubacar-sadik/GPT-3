@@ -31,8 +31,9 @@ export default function HeroBanner() {
 				</div>
 				<div className="flex flex-wrap items-center gap-4">
 					<div className="flex items-center">
-						{users.map((user) => (
+						{users.map((user, i) => (
 							<img
+								key={i}
 								src={user.userImage}
 								alt="user"
 								className=" w-9 h-9 rounded-full border-2 border-white -mr-3"
